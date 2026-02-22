@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>8-Week Glute Guide &#8212; Get Free Access</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap"></noscript>
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --cream: #FAF7F2;
+    --warm-white: #FFF9F4;
+    --blush: #E8C4B0;
+    --rose: #C97B5A;
+    --rose-dark: #A85C3A;
+    --deep: #1A1410;
+    --mocha: #6B4C3B;
+    --gold: #C9A96E;
+  }
+
+  html, body {
+    min-height: 100%;
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--deep);
+    color: var(--warm-white);
+    overflow-x: hidden;
+  }
+
+  /* BACKGROUND TEXTURE */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 20%, rgba(201,123,90,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 80% at 80% 80%, rgba(201,169,110,0.08) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* MAIN WRAPPER */
+  .page {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  /* TOP BRAND */
+  .brand {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(250,247,242,0.35);
+    margin-bottom: 48px;
+    animation: fadeDown 0.5s ease both;
+  }
+
+  /* CARD */
+  .card {
+    width: 100%;
+    max-width: 480px;
+    background: rgba(255,249,244,0.04);
+    border: 1px solid rgba(201,169,110,0.15);
+    border-radius: 24px;
+    padding: 48px 40px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeUp 0.5s ease 0.1s both;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(201,123,90,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  /* GUIDE BADGE */
+  .guide-badge {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+
+  .guide-icon-wrap {
+    width: 52px; height: 52px;
+    background: linear-gradient(135deg, var(--blush), var(--rose));
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px;
+    flex-shrink: 0;
+  }
+
+  .guide-badge-text { display: flex; flex-direction: column; gap: 2px; }
+
+  .guide-badge-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--warm-white);
+  }
+
+  .guide-badge-sub {
+    font-size: 12px;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  /* HEADLINE */
+  .headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(28px, 6vw, 38px);
+    font-weight: 900;
+    line-height: 1.15;
+    color: var(--warm-white);
+    margin-bottom: 14px;
+  }
+
+  .headline em {
+    font-style: italic;
+    color: var(--blush);
+  }
+
+  .subline {
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(250,247,242,0.55);
+    margin-bottom: 28px;
+    font-weight: 300;
+  }
+
+  /* CHECKLIST */
+  .checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 32px;
+    padding: 20px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 12px;
+    border: 1px solid rgba(201,169,110,0.1);
+  }
+
+  .check-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: rgba(250,247,242,0.8);
+  }
+
+  .check-dot {
+    width: 20px; height: 20px;
+    background: linear-gradient(135deg, var(--rose), var(--rose-dark));
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    font-size: 10px;
+    color: white;
+    font-weight: 700;
+  }
+
+  /* FORM */
+  .form-wrap { display: flex; flex-direction: column; gap: 12px; }
+
+  .email-input {
+    width: 100%;
+    padding: 16px 20px;
+    background: rgba(255,249,244,0.07);
+    border: 1px solid rgba(201,169,110,0.2);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--warm-white);
+    outline: none;
+    transition: border-color 0.2s ease, background 0.2s ease;
+  }
+
+  .email-input::placeholder { color: rgba(250,247,242,0.3); }
+
+  .email-input:focus {
+    border-color: var(--rose);
+    background: rgba(255,249,244,0.1);
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 18px 24px;
+    background: linear-gradient(135deg, var(--rose) 0%, var(--rose-dark) 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+    will-change: transform;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+    box-shadow: 0 6px 24px rgba(201,123,90,0.35);
+    position: relative;
+  }
+
+  .submit-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 32px rgba(201,123,90,0.45);
+  }
+
+  .submit-btn:disabled { opacity: 0.7; cursor: not-allowed; }
+
+  /* LOADING SPINNER */
+  .spinner {
+    display: none;
+    width: 18px; height: 18px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    margin: 0 auto;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .btn-text { display: block; }
+
+  .trust-line {
+    text-align: center;
+    font-size: 12px;
+    color: rgba(250,247,242,0.25);
+    margin-top: 4px;
+  }
+
+  /* ERROR MESSAGE */
+  .error-msg {
+    display: none;
+    background: rgba(220,60,60,0.1);
+    border: 1px solid rgba(220,60,60,0.3);
+    color: #ff8a8a;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  /* SUCCESS STATE */
+  .success-state {
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+    animation: fadeUp 0.4s ease both;
+  }
+
+  .success-icon {
+    font-size: 52px;
+    margin-bottom: 16px;
+    display: block;
+    animation: bounceIn 0.5s ease both;
+  }
+
+  .success-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--warm-white);
+    margin-bottom: 10px;
+  }
+
+  .success-sub {
+    font-size: 15px;
+    color: rgba(250,247,242,0.55);
+    line-height: 1.6;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .success-note {
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgba(250,247,242,0.25);
+  }
+
+  /* SOCIAL PROOF STRIP */
+  .social-proof {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(201,169,110,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 13px;
+    color: rgba(250,247,242,0.35);
+  }
+
+  .avatars {
+    display: flex;
+    margin-right: 4px;
+  }
+
+  .avatar {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    border: 2px solid var(--deep);
+    margin-left: -8px;
+    font-size: 11px;
+    display: flex; align-items: center; justify-content: center;
+    color: white;
+    font-weight: 700;
+  }
+
+  .avatar:first-child { margin-left: 0; }
+
+  .stars-small {
+    color: #F5A623;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  /* BOTTOM TRUST */
+  .bottom-trust {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 11px;
+    color: rgba(250,247,242,0.2);
+    letter-spacing: 0.5px;
+    animation: fadeUp 0.5s ease 0.3s both;
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    70% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  /* MOBILE */
+  @media (max-width: 520px) {
+    .card { padding: 36px 24px; border-radius: 18px; }
+    .headline { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="brand">Amanda &amp; Filippa Fransson</div>
+
+  <div class="card" id="mainCard">
+
+    <!-- GUIDE BADGE -->
+    <div class="guide-badge">
+      <div class="guide-icon-wrap">&#127825;</div>
+      <div class="guide-badge-text">
+        <div class="guide-badge-title">8-Week Glute Guide</div>
+        <div class="guide-badge-sub">&#9733;&#9733;&#9733;&#9733;&#9733; &nbsp;Free Access</div>
+      </div>
+    </div>
+
+    <!-- HEADLINE -->
+    <h1 class="headline">
+      You&rsquo;re one step away<br>from <em>real results.</em>
+    </h1>
+    <p class="subline">
+      Enter your email and get instant access &mdash; no payment, no catch. Just the exact 8-week plan that finally makes glutes grow.
+    </p>
+
+    <!-- CHECKLIST -->
+    <div class="checklist">
+      <div class="check-item">
+        <span class="check-dot">&#10003;</span>
+        8 weeks of progressive workouts
+      </div>
+      <div class="check-item">
+        <span class="check-dot">&#10003;</span>
+        Video demos for every exercise
+      </div>
+      <div class="check-item">
+        <span class="check-dot">&#10003;</span>
+        Complete nutrition plan included
+      </div>
+      <div class="check-item">
+        <span class="check-dot">&#10003;</span>
+        Zero guesswork &mdash; just show up and execute
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div id="formSection">
+      <div class="form-wrap">
+        <input
+          type="email"
+          class="email-input"
+          id="emailInput"
+          placeholder="Your email address"
+          autocomplete="email"
+          inputmode="email"
+        >
+        <div class="error-msg" id="errorMsg">
+          Please enter a valid email address.
+        </div>
+        <button class="submit-btn" id="submitBtn" onclick="handleSubmit()">
+          <span class="btn-text" id="btnText">Yes, Send Me the Guide &rarr;</span>
+          <span class="spinner" id="spinner"></span>
+        </button>
+        <p class="trust-line">&#128274; No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+
+    <!-- SUCCESS STATE (hidden until form submitted) -->
+    <div class="success-state" id="successState">
+      <span class="success-icon">&#9989;</span>
+      <div class="success-title">You&rsquo;re in!</div>
+      <p class="success-sub">
+        Check your inbox &mdash; your free 8-Week Glute Guide is on its way right now.
+      </p>
+      <p class="success-note">
+        Don&rsquo;t see it? Check your spam folder and mark us as safe.
+      </p>
+    </div>
+
+    <!-- SOCIAL PROOF -->
+    <div class="social-proof" id="socialProof">
+      <div class="avatars">
+        <div class="avatar" style="background:linear-gradient(135deg,#C97B5A,#A85C3A);">S</div>
+        <div class="avatar" style="background:linear-gradient(135deg,#9B6B4A,#6B3A25);">A</div>
+        <div class="avatar" style="background:linear-gradient(135deg,#B87B5A,#8B5A3A);">M</div>
+        <div class="avatar" style="background:linear-gradient(135deg,#C97B5A,#8B4A2F);">L</div>
+      </div>
+      <span class="stars-small">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span>Join 2,400+ women already inside</span>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM TRUST STRIP -->
+  <div class="bottom-trust">
+    <span>&#128274; 100% Free</span>
+    <span>&#9889; Instant Access</span>
+    <span>&#10003; No Credit Card</span>
+  </div>
+
+</div>
+
+<script>
+// ============================================================
+// SYSTEME.IO FORM SUBMISSION
+// Replace YOUR_FORM_ID with the actual form ID from Systeme.io
+// To find it: Funnels → Your funnel → Edit → Click the form → Settings → Form ID
+// ============================================================
+
+
+function validateEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function showError(msg) {
+  const el = document.getElementById('errorMsg');
+  el.textContent = msg;
+  el.style.display = 'block';
+}
+
+function hideError() {
+  document.getElementById('errorMsg').style.display = 'none';
+}
+
+function setLoading(loading) {
+  const btn = document.getElementById('submitBtn');
+  const text = document.getElementById('btnText');
+  const spinner = document.getElementById('spinner');
+  btn.disabled = loading;
+  text.style.display = loading ? 'none' : 'block';
+  spinner.style.display = loading ? 'block' : 'none';
+}
+
+function showSuccess() {
+  document.getElementById('formSection').style.display = 'none';
+  document.getElementById('socialProof').style.display = 'none';
+  const s = document.getElementById('successState');
+  s.style.display = 'block';
+}
+
+function handleSubmit() {
+  const email = document.getElementById('emailInput').value.trim();
+  hideError();
+
+  if (!email) { showError('Please enter your email address.'); return; }
+  if (!validateEmail(email)) { showError('Please enter a valid email address.'); return; }
+
+  setLoading(true);
+
+  // Show success message briefly then redirect
+  showSuccess();
+
+  // Redirect to Systeme.io with email pre-filled
+  setTimeout(() => {
+    const encoded = encodeURIComponent(email);
+    window.location.href = 'https://glutes.systeme.io/fa655ead?email=' + encoded;
+  }, 1200);
+}
+
+// Allow Enter key to submit
+document.getElementById('emailInput').addEventListener('keypress', function(e) {
+  if (e.key === 'Enter') handleSubmit();
+});
+</script>
+
+</body>
+</html>
